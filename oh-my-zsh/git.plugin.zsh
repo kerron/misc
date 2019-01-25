@@ -1,5 +1,3 @@
-# PATH: /Users/kerron/.oh-my-zsh/plugins/git
-
 # Query/use custom command for `git`.
 zstyle -s ":vcs_info:git:*:-all-" "command" _omz_git_git_cmd
 : ${_omz_git_git_cmd:=git}
@@ -85,7 +83,7 @@ alias gco='git checkout'
 alias gcount='git shortlog -sn'
 compdef _git gcount
 
-alias gcp='git checkout -'
+alias gcop='git checkout -'
 # alias gcp='git cherry-pick'
 # alias gcpa='git cherry-pick --abort'
 # alias gcpc='git cherry-pick --continue'
@@ -163,7 +161,8 @@ compdef _git ggpur=git-checkout
 alias ggpull='git pull origin $(git_current_branch)'
 compdef _git ggpull=git-checkout
 
-alias ggpush='git push origin $(git_current_branch)'
+# alias ggpush='git push origin $(git_current_branch)'
+alias gpo='git push origin $(git_current_branch)'
 compdef _git ggpush=git-checkout
 
 alias ggsup='git branch --set-upstream-to=origin/$(git_current_branch)'
@@ -247,7 +246,8 @@ alias gsr='git svn rebase'
 alias gss='git status -s'
 # alias gst='git status'
 alias gs='git status'
-alias gsta='git stash save'
+alias gst='git stash'
+# alias gsta='git stash save'
 alias gstaa='git stash apply'
 alias gstc='git stash clear'
 alias gstd='git stash drop'
