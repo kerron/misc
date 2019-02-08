@@ -37,7 +37,6 @@ function work_in_progress() {
 # Aliases
 # (sorted alphabetically)
 #
-
 alias g='git'
 
 alias ga='git add *'
@@ -52,6 +51,7 @@ alias gba='git branch -a'
 alias gbd='git branch -d'
 alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d'
 alias gbD='git branch -D'
+alias gbod='git push orign --delete'
 alias gbl='git blame -b -w'
 alias gbnm='git branch --no-merged'
 alias gbr='git branch --remote'
@@ -72,7 +72,8 @@ alias gcam='git commit -a -m'
 alias gcsm='git commit -s -m'
 alias gcob='git checkout -b'
 alias gcf='git config --list'
-alias gcl='git clone --recurse-submodules'
+# alias gcl='git clone --recurse-submodules'
+alias gcl='git clone'
 alias gclean='git clean -fd'
 alias gpristine='git reset --hard && git clean -dfx'
 alias gcom='git checkout master'
@@ -208,6 +209,7 @@ alias gp='git push'
 alias gpd='git push --dry-run'
 # alias gpf='git push --force-with-lease'
 alias gpf='git push --force'
+alias gpof='git push --force --set-upstream origin $(git_current_branch)'
 alias gpoat='git push origin --all && git push origin --tags'
 compdef _git gpoat=git-push
 alias gpu='git push upstream'
@@ -270,3 +272,4 @@ alias glum='git pull upstream master'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
+
