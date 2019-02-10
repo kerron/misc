@@ -86,6 +86,9 @@ function cd {
   builtin cd "$@" && ls
 }
 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZPLUG_HOME/init.zsh
+export ZPLUG_HOME=/usr/local/opt/zplug
 
 # The ip address that docker containers will bind to.
 export DOCKER_GATEWAY="192.168.65.2"
@@ -194,6 +197,4 @@ if [ -f '/Users/kerron/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kerron/g
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kerron/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kerron/google-cloud-sdk/completion.zsh.inc'; fi
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
+
