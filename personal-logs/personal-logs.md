@@ -379,4 +379,8 @@ Wed 20.02.19
     - trying to understand UI, again having problems understand where things start and where they end
     - checked phone
     - played around with terminal
+      16.00
+    - went for a break
+      16.30
+    - UI dismiss
     -
