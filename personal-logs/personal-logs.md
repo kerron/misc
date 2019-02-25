@@ -389,4 +389,33 @@ Wed 20.02.19
     - made breakfast
     - rebuilding services
       10.00
-    -
+    - the usual - getting docker to work
+      10.15
+    - still trying to get docker to work
+    - made coffee
+    - verbatims are working, but entity changes are not showing
+      10.30
+    - reading about vim
+    - replied to slack channel
+      10.45
+  - check which tickets to work on
+  - started listening to music
+  - checked vim basic copy/paste features
+  - pushed vimrc
+    11.00
+  - standup
+    11.15
+  - worked on removing entity from front end
+  - created ticket
+    11.30
+  - spoke with anne about other front-end tickets for UBS POC
+  - 12.00
+  - check phone
+  - replied about climbing
+  - setting up vim
+  - 12.15
+  - continued setting up vim
+  - 12.30
+  - spoke with tom about removing entities API
+  - listen to Ed about feedback from UBS
+  -
