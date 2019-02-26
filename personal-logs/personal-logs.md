@@ -418,4 +418,44 @@ Wed 20.02.19
   - 12.30
   - spoke with tom about removing entities API
   - listen to Ed about feedback from UBS
-  -
+  - wrote thailand recommendations  
+  13.30
+  - 
+  15.00
+  - asked anne for podcast
+  - trying to get entity to work with perimission
+  16.00
+  - working on being able to select entity in title
+  16.15
+  - found where entity ref is made
+  - need to find out how to add to it, or put in in a place that can handle both instances.
+ 10.00
+ - going through work from yesterday
+ - not sure what the prioritised are
+ - had breakfast in the kitchen area
+ 10.30
+ - started looking at tickets again
+ - working on making discover verbatim clickable
+ 10.45
+ - trying to figure out how discover deselect works
+ - checked tickets for jazz festival
+ - spoke with cristi about discover UI change
+ 11.00
+ - standup
+ 11.15
+ - checked phone
+ - work
+ 11.30
+ - figured out what to do for dismiss verbatim
+ - took a break
+ 12.00
+ - continue on discover
+ - figured out what to do for discover
+ 12.15
+ - thinking it's best to create something and get feedback, rather than trying to make it perfect
+ - 12.30
+ - created PR
+ 12.45
+ - submitted PR
+ - songkick
+ -
