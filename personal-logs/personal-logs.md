@@ -528,3 +528,6 @@ Wed 20.02.19
 ### 14.45
 
 - improved vimrc
+- pushed vimrc to branch
+  15.00
+-
