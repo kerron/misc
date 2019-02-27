@@ -457,4 +457,74 @@ Wed 20.02.19
   12.45
 - submitted PR
 - songkick
--
+- tonsai
+  13.45
+- lunch
+  14.45
+- working on PR comments
+  15.15
+- break
+  15.45
+- tonsai ticket
+  16.00
+- phone
+- started working on ticket again
+  16.30
+- working on ticket
+- spoke with marius about same ticket and pr i did this morning
+  16.45
+- continued
+- break to have apple
+- phone
+  -17.00
+- distracted by office talk
+
+  27.02.19
+  09.40
+
+- Office
+- created ticket for Tonsai
+- applied for vipassana
+- check email for China
+  10.00
+- replied to George asking about creating Organisation
+- replied to pixel matters
+- checking marketing pages pr
+  10.15
+- made breakfast
+- - still trying to understand pixelmatters work
+    10.30
+- pixelmatters
+- breakfast
+  10.45
+- asked Tom for help, was able to solve the problem fairly quickly using git patch and `git apply [path_to_patch]`
+- coffee
+  11.00
+- returning to work on buttons from yesterday
+- standup
+  11.15
+- phone
+- reading docs created by George (pretty good)
+  11.30
+- reading docs
+  11.45
+- checked phone
+- reading docs
+  12.00
+- spoke with Steve, he's not sure what is going on either
+- made slack request for explanation
+  12.15
+- checked phone
+- read about citymapper
+
+### 12.130
+
+- tonsai
+- phone
+- book restaurant for Friday
+  14.30
+- team meeting about UBS
+
+### 14.45
+
+- improved vimrc

@@ -14,7 +14,17 @@ Plug 'tpope/vim-surround'
 Plug 'othree/yajs.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'joshdick/onedark.vim'
+Plug 'Quramy/tsuquyomi' " Typescript as-you-type errors and linting
+Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting and support
+Plug 'mhinz/vim-signify' " Display git diff in gutter.
+Plug 'google/vim-jsonnet' " Jsonnet syntax highlighting and general support
+Plug 'unblevable/quick-scope' " Highlight good anchors for `FftT` movement.
+Plug 'Chiel92/vim-autoformat' " Run autoformatters in a consistent way.
+Plug 'plasticboy/vim-markdown' " Markdown syntax highlighting.
+Plug 'hynek/vim-python-pep8-indent' " Auto PEP8 identation for python.
+Plug 'vim-scripts/txt.vim' " Generic syntax highlighting for text files
 call plug#end()
+
 
 set runtimepath+=~/.vim_runtime
 set spelllang=en
@@ -31,7 +41,6 @@ let javaScript_fold=1
 set nosmd
 set noru
 set incsearch
-set clipboard=unnamedplus,unnamed
 set expandtab
 set tabstop=2
 set softtabstop=2
@@ -46,7 +55,6 @@ set number
 set showcmd
 set wildmenu
 set showmatch
-set incsearch
 set hlsearch
 set foldenable
 set foldlevelstart=20
@@ -67,6 +75,12 @@ if has('gui_running')
     set background=light
 else
     set background=dark
+endif
+
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
 endif
 
 call togglebg#map("alt+t")
@@ -114,5 +128,6 @@ endif
 
 syntax enable
 syntax on
-colorscheme onedark
-let g:airline_theme='onedark'
+"colorscheme onedark
+"let g:airline_theme='onedark'
+
