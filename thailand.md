@@ -4,8 +4,9 @@ This is quite popular so I didn't stay there too long. Instead I suggest taking 
 
 ## Tonsai
 
-Recommended Time: 1 Day
-Things to do: Relax, smoke/mushroom, drink, scenic, banana bread
+**Recommended Time**: 1 Day
+
+**Things to do**: Relax, smoke/mushroom, drink, scenic, banana bread
 
 Tonsai is only accessible by boat, but when you get there is it very beautiful with some bars on the shore, wooden cottages in the hills, and limestone mountains surrounding you.
 When you arrive on the island there's a Jamaican-theme bar on the far left. It's super-chilled, with some slacklining, cocktails, (free) smoke, food and very welcoming people.
@@ -14,8 +15,9 @@ There's a stall there which sells banana bread. If you're luckly she'll still ha
 
 ## Koh Tao
 
-Things to do: snorkelling, swim, relax, massage, watch fire-shows, romantic dinner, dance, scenic
-Recommended Time: Forever, Keep left when you get off the boat.
+**Things to do**: snorkelling, swim, relax, massage, watch fire-shows, romantic dinner, dance, scenic
+
+**Recommended Time**: Forever, Keep left when you get off the boat.
 
 Koh Tao is by far one of the the most beautiful places I've ever been. They say Hoi An (Vietnam) is one of the most romantic places, but it doesn't come close to Koh Tao. It's really hard not to be happy here and in awe of just how great life can be.
 
@@ -29,8 +31,9 @@ You'll have a great time here.
 
 ## Koh Phangnan
 
-Things to do: water slide, sunset bar, full-moon party, pool parties, hang out with locals, scenic
-Recommended time: 2 Full Days
+**Things to do**: water slide, sunset bar, full-moon party, pool parties, hang out with locals, scenic
+
+**Recommended time**: 2 Full Days
 
 If you're in Koh Tao, then it's worth visiting Koh Phangnan as well. This is where they have the infamous Full-moon party. I've never been as I'm not that good with loads of people. However, it one of the biggest party in Thailand, and probably in the world. It's infamous.
 Apart from that there's so much more to do on this island.
@@ -46,8 +49,10 @@ I have some history here, so if you going let me know and I'll get some locals t
 
 ## Bangkok,
 
-Things to do: everything
-Recommended time: 1 night
+**Things to do**: everything
+
+**Recommended time**: 1 night
+
 Ha! This place. If you want some advice I will recommend you offline.
 
 I recommend spending time south and exploring the island instead though, as you will feel short-changed if you only spend a day in Bangkok

@@ -558,3 +558,7 @@ Wed 20.02.19
     12.45 - lunch
     13.45
 - vim setup with dart
+-14.00
+- sprint planning
+14.45
+- jessie
