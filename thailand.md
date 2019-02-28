@@ -4,9 +4,8 @@ This is quite popular so I didn't stay there too long. Instead I suggest taking 
 
 ## Tonsai
 
-**Recommended Time**: 1 Day
-
 **Things to do**: Relax, smoke/mushroom, drink, scenic, banana bread
+**Recommended Time**: 1 Day
 
 Tonsai is only accessible by boat, but when you get there is it very beautiful with some bars on the shore, wooden cottages in the hills, and limestone mountains surrounding you.
 When you arrive on the island there's a Jamaican-theme bar on the far left. It's super-chilled, with some slacklining, cocktails, (free) smoke, food and very welcoming people.
