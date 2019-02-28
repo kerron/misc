@@ -13,18 +13,18 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-surround'
 Plug 'othree/yajs.vim'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'joshdick/onedark.vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'Quramy/tsuquyomi' " Typescript as-you-type errors and linting
 Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting and support
-Plug 'mhinz/vim-signify' " Display git diff in gutter.
 Plug 'google/vim-jsonnet' " Jsonnet syntax highlighting and general support
 Plug 'unblevable/quick-scope' " Highlight good anchors for `FftT` movement.
 Plug 'Chiel92/vim-autoformat' " Run autoformatters in a consistent way.
 Plug 'plasticboy/vim-markdown' " Markdown syntax highlighting.
 Plug 'hynek/vim-python-pep8-indent' " Auto PEP8 identation for python.
 Plug 'vim-scripts/txt.vim' " Generic syntax highlighting for text files
+Plug 'natebosch/vim-lsc'
+Plug 'dart-lang/dart-vim-plugin'
 call plug#end()
-
 
 set runtimepath+=~/.vim_runtime
 set spelllang=en
@@ -37,7 +37,6 @@ set cursorline
 set foldcolumn=1
 set foldlevelstart=99 
 set foldmethod=syntax
-let javaScript_fold=1
 set nosmd
 set noru
 set incsearch
@@ -67,12 +66,17 @@ set wildignore+=*.pyc,*.gz,*.bz2,*.7z,*.zip
 set wildignore+=*.pdf,*.png,*.pdf,*.mkv,*.mp3,*.mp4
 set wildignore+=*~,*.swp,.git
 
+let javaScript_fold=1
+" Airline
 let g:airline#extensions#hunks#enabled = 0
 let g:airline_powerline_fonts=1
+" Dart
+let g:lsc_server_commands = {'dart': 'dart_language_server'}
+let dart_style_guide = 2
+let dart_format_on_save = 1
+" reset prettier defaults
 let g:prettier#autoformat = 0
 let g:prettier#config#single_quote = 'false'
-
-" reset prettier defaults 
 " max line length that prettier will wrap on
 let g:prettier#config#print_width = 80
 " number of spaces per indentation level
@@ -163,6 +167,7 @@ endif
 
 syntax enable
 syntax on
-"colorscheme onedark
-"let g:airline_theme='onedark'
-
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
+"set background=light
+"colorscheme solarized
