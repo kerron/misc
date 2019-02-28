@@ -4,7 +4,7 @@ This is quite popular so I didn't stay there too long. Instead I suggest taking 
 
 ## Tonsai
 
-**Things to do**: Relax, smoke/mushroom, drink, scenic, banana bread
+**Things to do**: Relax, smoke/mushroom, drink, scenic, banana bread<br/>
 **Recommended Time**: 1 Day
 
 Tonsai is only accessible by boat, but when you get there is it very beautiful with some bars on the shore, wooden cottages in the hills, and limestone mountains surrounding you.
@@ -14,8 +14,7 @@ There's a stall there which sells banana bread. If you're luckly she'll still ha
 
 ## Koh Tao
 
-**Things to do**: snorkelling, swim, relax, massage, watch fire-shows, romantic dinner, dance, scenic
-
+**Things to do**: snorkelling, swim, relax, massage, watch fire-shows, romantic dinner, dance, scenic<br/>
 **Recommended Time**: Forever, Keep left when you get off the boat.
 
 Koh Tao is by far one of the the most beautiful places I've ever been. They say Hoi An (Vietnam) is one of the most romantic places, but it doesn't come close to Koh Tao. It's really hard not to be happy here and in awe of just how great life can be.
@@ -30,8 +29,7 @@ You'll have a great time here.
 
 ## Koh Phangnan
 
-**Things to do**: water slide, sunset bar, full-moon party, pool parties, hang out with locals, scenic
-
+**Things to do**: water slide, sunset bar, full-moon party, pool parties, hang out with locals, scenic<br/>
 **Recommended time**: 2 Full Days
 
 If you're in Koh Tao, then it's worth visiting Koh Phangnan as well. This is where they have the infamous Full-moon party. I've never been as I'm not that good with loads of people. However, it one of the biggest party in Thailand, and probably in the world. It's infamous.
@@ -48,8 +46,7 @@ I have some history here, so if you going let me know and I'll get some locals t
 
 ## Bangkok,
 
-**Things to do**: everything
-
+**Things to do**: everything<br/>
 **Recommended time**: 1 night
 
 Ha! This place. If you want some advice I will recommend you offline.
