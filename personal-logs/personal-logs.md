@@ -530,4 +530,31 @@ Wed 20.02.19
 - improved vimrc
 - pushed vimrc to branch
   15.00
--
+  - started working on button ticket from yesterday
+    15.15
+  - pixelmatters slack response
+  - going through button ticket
+    15.30
+  - finished changes to button, placed it before link option
+    15.45
+  - eat apple
+  - bathroom break
+  - asked anne to view pr, didn't have translated verbatims
+    16.00
+  - check phone
+  - set up vim
+  - 28.02.19
+    09.30
+  - breakfast
+    09.45
+  - starting day
+  - breakfast
+    10.00
+  - replied to slack message from pixelmatters
+  - vim
+    -10.15
+    vim setup, theme onehalfdark seems good
+    10.30 - sprint planning
+    12.45 - lunch
+    13.45
+- vim setup with dart
