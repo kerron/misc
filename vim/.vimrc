@@ -11,7 +11,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-surround'
-Plug 'othree/yajs.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'Quramy/tsuquyomi' " Typescript as-you-type errors and linting
@@ -22,8 +21,9 @@ Plug 'Chiel92/vim-autoformat' " Run autoformatters in a consistent way.
 Plug 'plasticboy/vim-markdown' " Markdown syntax highlighting.
 Plug 'hynek/vim-python-pep8-indent' " Auto PEP8 identation for python.
 Plug 'vim-scripts/txt.vim' " Generic syntax highlighting for text files
-Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc' " dart language support for vim
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 set runtimepath+=~/.vim_runtime
@@ -67,6 +67,7 @@ set wildignore+=*.pdf,*.png,*.pdf,*.mkv,*.mp3,*.mp4
 set wildignore+=*~,*.swp,.git
 
 let javaScript_fold=1
+let g:gitgutter_async=1
 " Airline
 let g:airline#extensions#hunks#enabled = 0
 let g:airline_powerline_fonts=1
@@ -104,7 +105,9 @@ let g:prettier#config#prose_wrap = 'preserve'
 
 :hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
