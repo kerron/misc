@@ -558,7 +558,44 @@ Wed 20.02.19
     12.45 - lunch
     13.45
 - vim setup with dart
--14.00
+  -14.00
 - sprint planning
-14.45
+  14.45
 - jessie
+- vim setup
+  15.30
+- break
+  16.00
+- reviewed pr for rich
+- started working on popmotion
+  16.15
+- working on popmotion
+  16.45
+- working on popmotion
+  17.00
+- working on popmotion
+  01.03.19
+- 09.30
+- work on popmotion
+  10.00
+- checked sprint board
+- continue working on popmotion
+  11.00
+- standup
+  11.15
+- made porridge
+- 12.30
+- lunch
+  13.30
+- docker issues
+  15.30
+- finally got docker working - such a pain
+- hidden entities
+- checked phone
+  15.45
+- hidden entities
+  17.00
+- got highligheted entities working, but then realised that it is used in different places for different things
+- 17.15
+- - updated PR with videos
+

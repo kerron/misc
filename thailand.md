@@ -51,4 +51,4 @@ I have some history here, so if you going let me know and I'll get some locals t
 
 Ha! This place. If you want some advice I will recommend you offline.
 
-I recommend spending time south and exploring the island instead though, as you will feel short-changed if you only spend a day in Bangkok
+I recommend spending time south and exploring the island instead though, as you will feel short-changed if you only spend a day in Bangkok.
