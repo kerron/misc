@@ -165,10 +165,10 @@ compdef _git ggpull=git-checkout
 # alias ggpush='git push origin $(git_current_branch)'
 alias gpo='git push origin $(git_current_branch)'
 compdef _git ggpush=git-checkout
-
+alias gupdate='!git branch --merged | grep  -v "\\*\\|master\\|develop" | xargs -n 1 git branch -d'
 alias ggsup='git branch --set-upstream-to=origin/$(git_current_branch)'
 alias gpsup='git push --set-upstream origin $(git_current_branch)'
-
+alias gpsu='git push --set-upstream origin $(git_current_branch)'
 alias ghh='git help'
 
 alias gignore='git update-index --assume-unchanged'
