@@ -598,4 +598,3 @@ Wed 20.02.19
 - got highligheted entities working, but then realised that it is used in different places for different things
 - 17.15
 - - updated PR with videos
-
