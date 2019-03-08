@@ -24,6 +24,9 @@ Plug 'vim-scripts/txt.vim' " Generic syntax highlighting for text files
 Plug 'natebosch/vim-lsc' " dart language support for vim
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+" Navigate undo tree
+Plug 'simnalamburt/vim-mundo'
 call plug#end()
 
 set runtimepath+=~/.vim_runtime
@@ -33,34 +36,48 @@ execute pathogen#infect()
 
 augroup filetype javascript syntax=javascript
 
-set cursorline
-set foldcolumn=1
-set foldlevelstart=99 
-set foldmethod=syntax
-set nosmd
-set noru
-set incsearch
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set relativenumber
-set updatetime=250
-set noshowmode
-set ttimeoutlen=0
-set laststatus=0
-set directory^=$HOME/.vim/tmp//
-set number
-set showcmd
-set wildmenu
-set showmatch
-set hlsearch
-set foldenable
-set foldlevelstart=20
-set clipboard=unnamed
-set clipboard=unnamedplus
+set autochdir                  " Set working dir to current file
+set autoread                   " Auto reload changed files.
+set backspace=2                " Backspace for sane people.
+set backupdir=~/.vim/backup//  " Backups.
+set cc=81,82                   " Column markers.
+set clipboard=unnamed,unnamedplus " Yank to both tmux and X window clipboard
+set cursorline                 " Show current line in buffer.
+set diffopt+=vertical          " Show diffs of files split vertically
+set dir=~/.vim/swap//          " Swap files.
+set expandtab                  " Tabs as spaces.
+set foldlevelstart=100         " Start unfolded
+set hidden
+set history=5000               " Command history.
+set hlsearch                   " Highlight previous search results
+set incsearch                  " Do incremental searching
+set laststatus=2               " Always display the last status
+set mouse=a                    " Mouse support.
+set nohidden                   " Explicitly disallow hidden buffers.
+set nonu                       " Turn off line number - necessary for relative line number
+set number                     " Set line numbers
+set relativenumber             " Relative line number
+set shiftwidth=2               " How many spaces << >> modify.
+set showmatch                  " Show matching braces / brackets
+set showmode                   " Show the mode you're currently in
+set softtabstop=2              " Make tabs act like spaces for editing ops
+set t_Co=256                   " 256 colours terminal
+set textwidth=0                " Width in columns to autobreak at (default)
+set timeout                    " For YCM's recompilation.
+set title                      " Let vim change my tab/window title
+set timeoutlen=1000            " Chord timeouts
+set ttimeoutlen=0              " Chord timeouts
+set ttyfast                    " Fast TTY connection (local)
+set undodir=$HOME/.vim/undo    " Where to save undo histories
+set undofile                   " Save undo's after file closes
+set undolevels=1000            " How many undos
+set undoreload=10000           " Number of lines to save.
+set wildchar=<Tab>             " Get wild comps with Tab.
+set wildmenu                   " Autocomp menu.
+set wildmode=list:longest,full " Shell like filename autocomp.
+set scrolloff=16
 
-" Things to ignore in filename autocomp.
+"" Things to ignore in filename autocomp.
 set wildignore+=*.a,*.o,*.pch,*.bin,*.toc
 set wildignore+=*.pyc,*.gz,*.bz2,*.7z,*.zip
 set wildignore+=*.pdf,*.png,*.pdf,*.mkv,*.mp3,*.mp4
@@ -107,7 +124,7 @@ let g:prettier#config#prose_wrap = 'preserve'
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <leader>m :NERDTreeToggle<CR>
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
@@ -172,5 +189,3 @@ syntax enable
 syntax on
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
-"set background=light
-"colorscheme solarized
