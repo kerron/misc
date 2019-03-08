@@ -127,6 +127,7 @@ nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 nnoremap <leader>m :NERDTreeToggle<CR>
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufRead,BufNewFile *.md setlocal spell
 
 let g:solarized_termcolors=256
 
@@ -189,3 +190,5 @@ syntax enable
 syntax on
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
+"set background=light
+"colorscheme solarized
