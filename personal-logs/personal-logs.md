@@ -598,3 +598,89 @@ Wed 20.02.19
 - got highligheted entities working, but then realised that it is used in different places for different things
 - 17.15
 - - updated PR with videos
+    04.03.19
+- 09.30
+- enter office,
+- deo
+- spoke with tom about buying a house
+  09.45
+- looked at rich's PR
+- tried creating more datasets, but getting error
+  10.00
+- breakfast
+- tried creating more datasets, but getting error
+  10.30
+- had breakfast
+- tried creating more datasets, but getting error
+  10.45
+- tesco
+- looking at rich's pr for entity
+  11.00
+- standup
+- asked rich for help
+  11.15
+- coffee
+  11.30
+- tried working on ticket but local env isn't setup
+- trying out vim
+  11.45
+- trying out vim
+- nothing works
+  12.00
+- 13.45
+- entity hidden
+  14.00
+- update entity hidden with changes I think will work
+- checked phone
+  16.00
+- took a break, given a book by Mara about Software Engineering
+  16.45
+- started working on CR by marius
+
+  05.03.19
+  09.30
+
+- checked emails
+- spoke to rich
+  10.00
+- spoke with anne and George
+  10.30
+- working on getting selenium running
+
+Yesterday I worked on:
+
+- displaying entity tooltip
+- user default permission
+  15.00
+- working on signature-discover pr, marius feedback
+  15.30
+- tonsai firebase push failed
+- working on Rich's pr comment for user permission
+  15.45
+- DOCKER!!!!!
+- break...
+  16.45
+- popmotion filter
+
+  06.03.18
+  09.30
+
+- merged user permission PR
+- check emails
+- started working on entity-tooltip-hidden
+  10.45
+- created tooltip pr
+  11.00
+- standup
+  11.15
+- breakfast
+  11.45
+- popmotion
+  12.00
+- dribbble designs
+  speak to 6 customer (more is deminishing returns, less won't get enough)
+  even on the dashboard there is no information about what I should care about. It doesn't indicate how powerful the system actually is.
+
+Do it in-house by hiring product designers (x2) and work through the product togather. Rather than hiring an agency as it would be super expensive.
+
+we could be more forcoming with insights we make, rather than waiting on users to make an investment.
