@@ -1,19 +1,24 @@
-# Greece
+# Vietnam
 
-**Date**: 22 Mar 2019 - ~30 Mar 2019  
-**Fly To**: Athens
-
-Idea is to fly to Athens and then travel around other Islands by boat.  
-(Can buy ferry tickets there, as when needed.)
+**Date**: 22 Mar 2019 - ~5 Apr 2019  
+**Fly To**: Hanoi, Vietnam
+**Fly from**: Ho Chi Min, Vietnam
 
 ## Visit
 
-- Athens
-- Santorini
-- Crete
-- etc
+- Hanoi
+- Ha Long Bay
+- (Bus)
+- Hue
+- (motorcycle)
+- Hoi An
+- (motorcycle)
+- My Son (whilst visiting Hoi An)
+- (Bus)
+- Mekong Delta and/or Phu Quoc
+- Ho Chi Minh (flight home)
 
 ## cost
 
-- flight: ~150£
-- hotels: TBD
+- flight: ~330£
+- hostels/hotels: TBD
