@@ -5,6 +5,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+Plug 'valloric/youcompleteme'
+Plug 'ianks/vim-tsx'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'sheerun/vim-polyglot'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'airblade/vim-gitgutter'
@@ -186,8 +189,14 @@ if (empty($TMUX))
   endif
 endif
 
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
+
 syntax enable
 syntax on
+hi tsxTagName guifg=#E06C75 ctermfg=DarkRed
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 "set background=light
