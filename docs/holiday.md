@@ -7,6 +7,7 @@
 ## Visit
 
 - Hanoi
+  ![Hanoi-Ha Long Bay]()
 - Ha Long Bay
 - (Bus)
 - Hue
