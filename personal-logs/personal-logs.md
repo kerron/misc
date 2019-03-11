@@ -684,3 +684,38 @@ Yesterday I worked on:
 Do it in-house by hiring product designers (x2) and work through the product togather. Rather than hiring an agency as it would be super expensive.
 
 we could be more forcoming with insights we make, rather than waiting on users to make an investment.
+
+08.03.2019
+14.00
+
+- entity tooltip
+  <!--- worked on neko docs-->
+  14.15
+- 14.45
+- sofa
+- 11.03.2019
+  10:15
+- coffee
+- working on entity tooltip pr
+- (music as office is load with keyboard)
+  10.30
+- entity tooltip
+
+  11.00
+
+- stand up
+  11.20
+  breakfast
+  11.45
+- entities
+- spoke to marius
+- merged signature pr
+- entity
+  12.00
+- can't get entity to work, i don't understand enough of it
+15.15
+- trying to figure out what the hell is going on in ts vim
+16.00
+- still setting up vim so i can code usefully
+16.45
+- finally got everything working in vim (for now)
