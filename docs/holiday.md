@@ -16,6 +16,8 @@
 
 2 days to sightsee in Hanoi
 
+Daria can choose what else to do.
+
 ### 24 Mar, Birthday
 
 Spend a day here:  
@@ -26,17 +28,23 @@ You can get here by bus or plane.
 
 Spend a day/night in:  
  [Hue](https://www.google.com/search?q=hue+vietnam&oq=hue+&aqs=chrome.0.69i59j69i61j69i60l2j69i57j0.2124j0j9&sourceid=chrome&ie=UTF-8)  
-rent a motorcycle
+Will get here by bus.
+
+Rent a motorcycle
 
 ### 26 - 28 Mar
 
 Motorcycle to:  
  [Hoi An](https://www.google.com/search?q=hoi+an+vietnam&oq=hoi+&aqs=chrome.2.69i57j0l2j69i60j0l2.2264j0j9&sourceid=chrome&ie=UTF-8)  
-Daria to choose what else to do.
+Daria can choose what else to do.
 
 ### 29 Mar
 
 Bus to Hanoi
+
+### 30 Mar
+
+Daria can choose what else to do.
 
 ### 31 Mar, 08:00
 
