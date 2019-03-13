@@ -689,8 +689,8 @@ we could be more forcoming with insights we make, rather than waiting on users t
 14.00
 
 - entity tooltip
-  <!--- worked on neko docs-->
-  14.15
+  - worked on neko docs
+    14.15
 - 14.45
 - sofa
 - 11.03.2019
@@ -713,9 +713,25 @@ we could be more forcoming with insights we make, rather than waiting on users t
 - entity
   12.00
 - can't get entity to work, i don't understand enough of it
-15.15
+  15.15
 - trying to figure out what the hell is going on in ts vim
-16.00
+  16.00
 - still setting up vim so i can code usefully
-16.45
+  16.45
 - finally got everything working in vim (for now)
+  17.00
+- made tea
+- checked phone
+- amazon, headphones
+  17.15
+- looking at rich's PR
+- checked phone
+  12.03.19
+  10.00
+- coffee
+- working on cr feedback for entity and everythingA
+  10.45
+- docker broken again, FML
+- 15.00
+- working on cr for pop motion
+- too many fucking edge cases with this
