@@ -2,18 +2,19 @@
 
 **Date**: 20 Mar 2019 - 31 Apr 2019  
 **Fly To**: Hanoi, Vietnam
-**Land in Vietnam** 21 Mar 23.00
+
+**Land in Vietnam** 21 Mar 23.00  
 **Land in London** 01 Apr 15.00
 
 ## Itinerary
 
-### 21 Mar
+### 21 Mar, 23:00 Arrive
 
 [Hanoi](https://www.google.com/search?q=hanoi&oq=hanoi&aqs=chrome..69i57j69i60l3j0l2.1443j0j9&sourceid=chrome&ie=UTF-8)
 
 ### 22 Mar - 23 Mar
 
-2 day sightseeing in Hanoi
+2 days to sightsee in Hanoi
 
 ### 24 Mar
 
@@ -36,16 +37,16 @@
 ### 27 Mar
 
 - motorcycle or bus to:
-  -- [My Son](https://www.google.com/search?q=my+son+vietnam&oq=my+son&aqs=chrome.0.69i59j69i57j69i60l3j0.1182j0j9&sourceid=chrome&ie=UTF-8) (whilst visiting Hoi An)
+- [My Son](https://www.google.com/search?q=my+son+vietnam&oq=my+son&aqs=chrome.0.69i59j69i57j69i60l3j0.1182j0j9&sourceid=chrome&ie=UTF-8) (whilst visiting Hoi An)
 
 ### 29 Mar
 
 - back to Hanoi
-- [Long layover](https://www.csair.com/en/tourguide/transit_flow/flightsTwo_hub/free_accommodations/)
 
 ### 31 Mar, 08:00
 
 - flight to London
+- [Long layover](https://www.csair.com/en/tourguide/transit_flow/flightsTwo_hub/free_accommodations/)
 
 ## cost
 
