@@ -38,9 +38,8 @@ This provide other people using the app with enough information to start a meani
 
 People are recommended to you based on their relative proximity, profession, and interests, making it easy to meet like-minded people. You decide what skills or interests you would like to know about, and we will tell you when you’re around this person. This means you can initiate a conversation on meaningful topics without feeling awkward or intrusive.
 
-By using the app you get to say all the right things and at the right times. People notice you, and for the right things.
-
-Neko gives you the opportunity to build prosperous engagements all in real time.
+Neko gives you the opportunity to say all the right things at the right time and build high value relationships.
+All in real time.
 
 ## How it works
 
