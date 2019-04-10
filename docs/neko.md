@@ -10,10 +10,6 @@ It's not always obvious that we share so much with the people we past on our dai
 
 We could be missing out on finding our next business partner, mentor, wedding photographer, designer, (etc) during these daily crossings.
 
-Instead we search behind a screen to connect with someone across the world, when we could already share many interests and skills with the person sitting next to us.
-
-These lack of real social connections make people feel lonely in a city as vibrant and opportunistic as London.
-
 So what's a better way to solve this?
 
 ## How
