@@ -30,11 +30,9 @@ Neko is a location-base mobile application that allows you to easily speak to th
 
 You do this through information you are happy to share on your public Profile.
 
-You can write anything on your profile and have it go everywhere with you. You can see it as having the biggest promotional banner with you all the time, to showcase your skills, interests, and to promote yourself just the way you want.
+You can write anything on your profile and have it go everywhere with you. You can see it as having the biggest promotional banner with you all the time, to showcase your skills, profession, and interests.
 
-Your profile is a very effective way to show off who you are, your skills, profession and interests.
-
-This provide other people using the app with enough information to start a meaningful conversation about things that really specific and matter to you.
+This provide other people using the app with enough information to start a meaningful conversation about things that are specific and important to you.
 
 People are recommended to you based on their relative proximity, profession, and interests, making it easy to meet like-minded people. You decide what skills or interests you would like to know about, and we will tell you when you’re around this person. This means you can initiate a conversation on meaningful topics without feeling awkward or intrusive.
 
