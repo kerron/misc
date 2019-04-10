@@ -4,11 +4,11 @@
 
 London is one of the most diverse capitals in the world. It is filled with people from all types of professional disciplines, skills, interests, and has an abundance of opportunities.
 
-Yet London is also one of the loneliest places to live.
-
 It's not always obvious that we share so much with the people we past on our daily commute, during our coffee breaks, or simply waiting in line at the grocery store. Yet these little crossings that govern our daily life could also offer us with many opportunities.
 
 We could be missing out on finding our next business partner, mentor, wedding photographer, designer, (etc) during these daily crossings.
+
+Instead we search behind a computer screen to connect with someone across the world, when we could already share many interests and skills with the person sitting next to us.
 
 So what's a better way to solve this?
 
