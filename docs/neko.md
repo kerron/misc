@@ -34,23 +34,3 @@ People are recommended to you based on their relative proximity, profession, and
 
 Neko gives you the opportunity to say all the right things at the right time and build high value relationships.
 All in real time.
-
-## How it works
-
-You will be able to login using one of the major sign-in methods (i.e. Google, Facebook, etc). This will take you to your accounts page where you are able to update your profile, specify your interests, profession, and what you would like to be notified about.
-
-![login](https://github.com/kerron/neko/blob/master/images/sign-in.png)
-![profile](https://github.com/kerron/neko/blob/master/images/profile.png)  
-The main screen shows a list of all the people you have crossed paths with within a certain proximity. Each profile card shows some information about the person, number of similar interests you share, a profile picture, and more.
-![main screen](https://github.com/kerron/neko/blob/master/images/main-screen.png)
-![user card](https://github.com/kerron/neko/blob/master/images/exclusive-badge.png)
-
-If a user has sent a connection request or a message, this will be notified to you via the sidebar, along with a notification icon on the top right corner of the user's profile cards.
-
-![notification](https://github.com/kerron/neko/blob/master/images/notification.png)  
-Clicking on a user's card allows you to see more information about that person, where you crossed paths, connection request, their skills, and more. You can request to connect with this person (or accept a connection request if sent) from the profile screen. The user first needs to accept your connection request before you can send a message.
-
-![user profile](https://github.com/kerron/neko/blob/master/images/user-profile.png)
-![chat](https://github.com/kerron/neko/blob/master/images/chat.png)  
-A business may send you an exclusive badge. This will first show up as a notification in the app, on which you can click to view more details. You have the option to accept or reject the badge. Badges are use to show exclusivity and represent a small number of people.  
-![badge received](https://github.com/kerron/neko/blob/master/images/badge-received.png)
