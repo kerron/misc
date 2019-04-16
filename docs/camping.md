@@ -1,6 +1,6 @@
 # Camping Apr - Bank Holiday
 
-### Food
+## Food
 
 - cordial
 - water
@@ -45,7 +45,10 @@ Camping Gear
 - yam
 - plantain
 
+### Dinner
+
+- local pub
+
 ### Activities
 
 - beach
-- local pub for dinner
