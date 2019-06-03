@@ -103,6 +103,7 @@ compdef _git gdv=git-diff
 
 alias gf='git fetch'
 alias gfa='git fetch --all --prune'
+alias gbp='git fetch && git branch --merged | xargs git branch -d && git remote prune origin'
 alias gfo='git fetch origin'
 
 function gfg() { git ls-files | grep $@ }
