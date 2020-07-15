@@ -104,6 +104,7 @@ compdef _git gdv=git-diff
 alias gf='git fetch'
 alias gfa='git fetch --all --prune'
 alias gbp='git fetch && git branch --merged | xargs git branch -d && git remote prune origin'
+alias gprune="git branch --list --merged master | rg -v ' master$' | xargs git branch -d"
 alias gfo='git fetch origin'
 
 function gfg() { git ls-files | grep $@ }
@@ -228,8 +229,7 @@ alias grbd='git rebase develop'
 alias grbi='git rebase -i'
 alias grbm='git rebase master'
 alias grbs='git rebase --skip'
-alias grh='git reset'
-alias grhh='git reset --hard'
+alias grh='git reset --hard'
 # alias grm='git rm'
 alias grmc='git rm --cached'
 alias grmv='git remote rename'
