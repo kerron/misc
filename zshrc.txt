@@ -1,23 +1,35 @@
+# If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH="/Users/kerron/.oh-my-zsh"
-export PATH="$PATH:/Users/kerron/Downloads/dev/flutter/bin"
-export ZPLUG_HOME=/usr/local/opt/zplug
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/kerronparchment/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
 
-ENABLE_CORRECTION="true"
+#  git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  history-substring-search
   k
   autojump
 )
 
+
+
 source $ZSH/oh-my-zsh.sh
 
-# ALIAS
+#User configuration
 alias svim='source ~/.vimrc'
 alias sgit='source ~/.oh-my-zsh/plugins/git/git.plugin.zsh'
 alias szsh='source ~/.zshrc'
@@ -25,11 +37,40 @@ alias gitrc='vim ~/.oh-my-zsh/plugins/git/git.plugin.zsh'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias f='flutter'
+alias rns='react-native start'
+alias rnhs='react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res'
+alias rna='react-native run-android'
+alias gvrc='vi ~/.oh-my-zsh/plugins/git/git.plugin.zsh'
+alias yt='yarn test --testPathPattern '
+alias ytw='yarn test --testPathPattern --watch '
+alias es='expo start'
+alias esc='expo start -c'
+alias ls="gls -1 --color=always"
+alias rios='react-native run-ios'
+alias fla='flutter emulators --launch android'
+alias fli='open -a Simulator'
+alias fra='flutter run -d emulator-5554'
+alias fri='flutter run -d A6A4AE59-0D8E-4D02-96E2-3C5DF2F058E5'
+alias fpg='flutter pub get'
+alias fd='flutter devices'
+alias lae='emulator -avd p3a'
 
+DEFAULT_USER=`whoami`
+
+prompt_dir() {
+  prompt_segment blue black "${PWD##*/}"
+}
+
+function cd {
+  builtin cd "$@" && ls
+}
+
+export PATH="$PATH:/Users/kerronparchment/Documents/flutter/bin"
+
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+  fi
+}
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-source $ZPLUG_HOME/init.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
