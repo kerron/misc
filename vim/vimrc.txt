@@ -5,43 +5,30 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'valloric/youcompleteme'
 Plug 'ianks/vim-tsx'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'sheerun/vim-polyglot'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'tpope/vim-fugitive' " git for vim
 Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting and support
-Plug 'google/vim-jsonnet' " Jsonnet syntax highlighting and general support
 Plug 'unblevable/quick-scope' " Highlight good anchors for `FftT` movement.
 Plug 'Chiel92/vim-autoformat' " Run autoformatters in a consistent way.
 Plug 'plasticboy/vim-markdown' " Markdown syntax highlighting.
-Plug 'hynek/vim-python-pep8-indent' " Auto PEP8 identation for python.
 Plug 'vim-scripts/txt.vim' " Generic syntax highlighting for text files
 Plug 'natebosch/vim-lsc' " dart language support for vim
 Plug 'natebosch/vim-lsc-dart'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-" Navigate undo tree
-Plug 'simnalamburt/vim-mundo'
 Plug 'vim-scripts/matchit.zip'
-Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-repeat' " Allow repeating plugin commands
-Plug 'herringtondarkholme/yats.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " VScode autocomplete for vim
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag' " html closing tags
 Plug 'Quramy/tsuquyomi'
+Plug 'ayu-theme/ayu-vim'
+Plug 'joshdick/onedark.vim'
+Plug 'sainnhe/sonokai'
 call plug#end()
 
 set spelllang=en
@@ -49,13 +36,11 @@ set spellfile=~/.vim/spell/en.utf-8.add
 
 augroup filetype javascript syntax=javascript
 
-" set autochdir                  " Set working dir to current file
 set autoread                   " Auto reload changed files.
 set backspace=2                " Backspace for sane people.
-set backupdir=~/.vim/backup/  " Backups.
+set backupdir=~/.vim/backups/  " Backups.
 set cc=81,82                   " Column markers.
 set cursorline                 " Show current line in buffer.
-set diffopt+=vertical          " Show diffs of files split vertically
 set dir=~/.vim/swap/          " Swap files.
 set expandtab                  " Tabs as spaces.
 set foldlevelstart=100         " Start unfolded
@@ -89,10 +74,11 @@ set wildmode=list:longest,full " Shell like filename autocomp.
 set scrolloff=16
 set showmatch                  " Show matching parenthesis
 set matchtime=3                " time elapsed until for showing paren matches
-set encoding=UTF-8
+set encoding=utf-8
 set ignorecase                 "case insensitive when search
 set smartcase                  "which will automatically switch to a case-sensitive search
 set virtualedit=block
+
 "" Things to ignore in filename autocomp.
 set wildignore+=*.a,*.o,*.pch,*.bin,*.toc
 set wildignore+=*.pyc,*.gz,*.bz2,*.7z,*.zip
@@ -105,59 +91,33 @@ set nomodeline
 set re=1 " Yet Another TypeScript Syntax 
 
 
-" filetypes like xml, html, xhtml, ...
-" These are the file types where this plugin is enabled.
-"
 let g:closetag_filetypes = 'html,xhtml,phtml,tsx'
-" filenames like *.xml, *.html, *.xhtml, ...
-" These are the file extensions where this plugin is enabled.
-"
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.tsx'
 
 let g:yats_host_keyword = 1 " Yet Another TypeScript Syntax
-let javaScript_fold=1
-let g:gitgutter_async=1
-" Airline
-let g:airline#extensions#hunks#enabled = 0
-let g:airline_powerline_fonts=1
-let g:airline_section_x = ''
-let g:airline_section_y = ''
-let g:airline_section_z = '%{strftime("%H:%M")} : %l/%L'
+
 " Dart
 let g:lsc_server_commands = {'dart': 'dart_language_server'}
 let dart_style_guide = 2
 let dart_format_on_save = 1
-" reset prettier defaults
+
+" Prettier
 let g:prettier#autoformat = 0
 let g:prettier#config#single_quote = 'false'
-" max line length that prettier will wrap on
-let g:prettier#config#print_width = 80
-" number of spaces per indentation level
-let g:prettier#config#tab_width = 2
-" use tabs over spaces
-let g:prettier#config#use_tabs = 'false'
-" print semicolons
-let g:prettier#config#semi = 'true'
-" single quotes over double quotes
+let g:prettier#config#print_width = 80 " max line length that prettier will wrap on
+let g:prettier#config#tab_width = 2 " number of spaces per indentation level
+let g:prettier#config#use_tabs = 'false' " use tabs over spaces
+let g:prettier#config#semi = 'true' " print semicolons
 let g:prettier#config#single_quote = 'false'
-" print spaces between brackets
-let g:prettier#config#bracket_spacing = 'true'
-" put > on the last line instead of new line
+let g:prettier#config#bracket_spacing = 'true' " print spaces between brackets
 let g:prettier#config#jsx_bracket_same_line = 'false'
-" avoid|always
 let g:prettier#config#arrow_parens = 'avoid'
-" none|es5|all
 let g:prettier#config#trailing_comma = 'none'
-" flow|babylon|typescript|css|less|scss|json|graphql|markdown
-let g:prettier#config#parser = 'none'
-" cli-override|file-override|prefer-file
+let g:prettier#config#parser = 'none' " flow|babylon|typescript|css|less|scss|json|graphql|markdown
 let g:prettier#config#config_precedence = 'prefer-file'
-" always|never|preserve
-let g:prettier#config#prose_wrap = 'preserve'
-" The command :Prettier by default is synchronous but can also be forced async
-let g:prettier#exec_cmd_async = 1
-" By default we auto focus on the quickfix when there are errors but can also be disabled
-let g:prettier#quickfix_auto_focus = 0
+let g:prettier#config#prose_wrap = 'preserve'  " always|never|preserve
+let g:prettier#exec_cmd_async = 1 " The command :Prettier by default is synchronous but can also be forced async
+let g:prettier#quickfix_auto_focus = 0 " By default we auto focus on the quickfix when there are errors but can also be disabled
 " tsuquyomi|Typsecript
 let g:tsuquyomi_shortest_import_path = 1
 let g:syntastic_typescript_checkers = ['tslint']
@@ -166,24 +126,9 @@ let g:syntastic_typescript_checkers = ['tslint']
 let NERDSpaceDelims=1
 let NERDTreeShowHidden=1
 
-"python dev setup
-let g:formatdef_sortblack = '"isort - | black --line-length 79 - 2> /dev/null"'
-let g:formatters_python = ['sortblack']
-let g:autoformat_autoindent = 0
-let g:autoformat_retab = 0
-
-" CtrlP
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\.git$\|\.yardoc\|node_modules\|log\|tmp$', 
-  \ 'file': '\v\.(pyc|so|dll)$'
-  \ }
-let g:ctrlp_use_caching = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_working_path_mode = 0
 
 " NERDTree
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.swo$', '__pycache__', '\.egg-info$']
-
 let g:NERDTreeIndicatorMapCustom = {"Modified": "m", "Staged": "+", "Deleted": "x", "Dirty": "⬤"}
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
@@ -207,11 +152,11 @@ augroup END
 
 let g:solarized_termcolors=256
 
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
+" if has('gui_running')
+    " set background=light
+" else
+    " set background=dark
+" endif
 
 if system('uname -s') == "Darwin\n"
   set clipboard=unnamed "OSX
@@ -219,37 +164,14 @@ else
   set clipboard=unnamedplus "Linux
 endif
 
-function! FzyCommand(choice_command, vim_command)
-  try
-    let output = system(a:choice_command . " | fzy ")
-  catch /Vim:Interrupt/
-    " Swallow errors from ^C, allow redraw! below
-  endtry
-  redraw!
-  if v:shell_error == 0 && !empty(output)
-    exec a:vim_command . ' ' . output
-  endif
-endfunction
-" override alias Ggr to better git grep that provides navigable locations
-:command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
+nmap <C-n> :NERDTreeToggle<CR>
 
 xnoremap p pgvy
 
-nnoremap <leader>e :call FzyCommand("find . -type f", ":e")<cr>
-nnoremap <leader>v :call FzyCommand("find . -type f", ":vs")<cr>
-nnoremap <leader>s :call FzyCommand("find . -type f", ":sp")<cr>
-nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
-nnoremap <leader>v :call FzyCommand("ag . --silent -l -g ''", ":vs")<cr>
-nnoremap <leader>s :call FzyCommand("ag . --silent -l -g ''", ":sp")<cr>
 nnoremap <leader><space> :nohlsearch<cr>
 
 " Tsuquyomi import
 nnoremap <leader>it :TsuImport <cr>
-nmap <C-n> :NERDTreeToggle<CR>
-
-" Allow passing optional flags into the Rg command.
-"   Example: :Rg myterm -g '*.md'
-command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case " . <q-args>, 1, <bang>0)
 
 filetype indent on
 
@@ -258,23 +180,17 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry
 
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
 
 if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
+
 let g:ycm_semantic_triggers['typescript'] = ['.']
-hi MatchParen cterm=none ctermbg=green ctermfg=blue
+let g:airline_theme = 'sonokai'
+
 syntax enable
 syntax on
 
-colorscheme onehalfdark
-" colorscheme yats
-let g:airline_theme='onehalfdark'
+set termguicolors
+set background=dark
+colorscheme onedark
