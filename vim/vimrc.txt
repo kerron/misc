@@ -41,6 +41,7 @@ set backspace=2                " Backspace for sane people.
 set backupdir=~/.vim/backups/  " Backups.
 set cc=81,82                   " Column markers.
 set cursorline                 " Show current line in buffer.
+set swapfile
 set dir=~/.vim/swap/          " Swap files.
 set expandtab                  " Tabs as spaces.
 set foldlevelstart=100         " Start unfolded
@@ -129,7 +130,7 @@ let NERDTreeShowHidden=1
 
 " NERDTree
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.swo$', '__pycache__', '\.egg-info$']
-let g:NERDTreeIndicatorMapCustom = {"Modified": "m", "Staged": "+", "Deleted": "x", "Dirty": "⬤"}
+let g:NERDTreeGitStatusIndicatorMapCustom = {"Modified": "m", "Staged": "+", "Deleted": "x", "Dirty": "⬤"}
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
@@ -192,5 +193,5 @@ syntax enable
 syntax on
 
 set termguicolors
-set background=dark
+let ayucolor="mirage"   " for dark version of theme
 colorscheme onedark
