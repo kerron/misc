@@ -1,25 +1,36 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
+export DEFAULT_USER="$(whoami)"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/Users/kp/.local/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH="$PATH:/Users/KParchment/Documents/misc/flutter/bin"
+export PATH="$PATH:/Users/$DEFAULT_USER/Documents/dev/flutter_dev/flutter/bin"
 export PATH="$PATH:`pwd`/flutter/bin"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export FZF_DEFAULT_COMMAND='fd --type f '
 export BAT_THEME="base16-256"
 export NVM_DIR="$HOME/.nvm"
+export DENO_INSTALL="/Users/kp/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export RUSTUP_INIT_SKIP_PATH_CHECK=yes
+export GPG_TTY=$(tty)
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/KParchment/.oh-my-zsh"
+export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
 
-
-ZSH_THEME="agnoster"
+ZSH_THEME="frisk"
 
 plugins=(
   git
@@ -30,6 +41,14 @@ plugins=(
 
 # fzf custom
 # alias vf='vim -o `fzf` --preview="bat --style=numbers --color=always {}" --bind=ctrl-j:preview-down --bind=ctrl-k:preview-up'
+alias npms='npm start'
+alias vint='j int && nvim'
+alias nvimrc='nvim ~/.config/nvim'
+alias cself='j self-serve && code .'
+alias cint='j int && code .'
+alias cxapi='j xapi && code .'
+alias cni='j ni && code .'
+alias oa='open -a /Applications/Android\ Studio.app'
 alias vi='nvim'
 alias vim='nvim'
 alias f='flutter'
@@ -75,15 +94,87 @@ ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
-DEFAULT_USER=$(whoami)
 
 prompt_dir() {
   prompt_segment blue black '%2~'
 }
 
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+  fi
+}
 function cd {
   builtin cd "$@" && ls
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
+
+caloginattempt() {
+  echo "Attempting connection to AWS CodeArtifact NPM registry..."
+  aws codeartifact login --tool npm --repository npm-store --domain awie-codeartifact-shared-01 --namespace @esure-cloud --profile ecloud-shared-dev-users-571738151596
+  # aws codeartifact login --tool npm --repository npm-store-bb --domain awie-codeartifact-shared-01 --domain-owner 571738151596
+}
+
+calogin() {
+  caloginattempt
+  if [[ $? != 0 ]]; then
+    echo "Connection failed on first attempt..."
+    echo "Attempting token refresh from aws..."
+    aws sso login --profile ecloud-shared-dev-users-571738151596
+    caloginattempt
+    if [[ $? != 0 ]]; then
+      echo "Connection failed on second attempt..."
+      echo "Unable to auto-resolve issue, please review any previous error details to be resolved manually."
+    else
+      echo "Connection success on second attempt."
+    fi
+  else
+    echo "Connection success on first attempt."
+  fi
+}
+
+# use fzf to display branches with git log preview
+fzf-git-branch() {
+    git rev-parse HEAD > /dev/null 2>&1 || return
+
+    git branch --color=always --format='%(refname:short) (%(authorname))' |
+        grep -v HEAD | grep -v '/remotes\s' |
+        fzf --height 100% --ansi --no-multi 
+}
+
+
+# fzf-git-branch() {
+#     git rev-parse HEAD > /dev/null 2>&1 || return
+
+#     git branch --color=always --format='%(refname:short) (%(authorname))' |
+#         grep -v HEAD | grep -v '/remotes\s' |
+#         fzf --height 50% --ansi --no-multi --preview-window right:65% \
+#             --preview 'git log -n 50 --color=always --date=short --pretty="format:%C(auto)%cd %h%d %s" $(sed "s/.* //" <<< {})' |
+#         sed "s/.* //" | sed 's#^remotes/[^/]*/##'
+# }
+
+# use fzf to filter branches when checking out
+gbf() {
+    git rev-parse HEAD > /dev/null 2>&1 || return
+
+    local branch
+
+    branch=$(fzf-git-branch)
+    if [[ "$branch" = "" ]]; then
+        return
+    else
+        git checkout $branch;
+    fi
+}
+
+if [ -r ~/.zshrc ]; then echo 'export GPG_TTY=$(tty)' >> ~/.zshrc; \
+  else echo 'export GPG_TTY=$(tty)' >> ~/.zprofile; fi
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+#[ -f "/Users/kp/.ghcup/env" ] && source "/Users/kp/.ghcup/env" # ghcup-env
+[ -f "/Users/kp/.ghcup/env" ] && source "/Users/kp/.ghcup/env" # ghcup-env
+
