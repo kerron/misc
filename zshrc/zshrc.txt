@@ -26,11 +26,11 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 export RUSTUP_INIT_SKIP_PATH_CHECK=yes
 export GPG_TTY=$(tty)
-
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
 
-ZSH_THEME="frisk"
+ZSH_THEME="refined"
 
 plugins=(
   git
@@ -41,7 +41,11 @@ plugins=(
 
 # fzf custom
 # alias vf='vim -o `fzf` --preview="bat --style=numbers --color=always {}" --bind=ctrl-j:preview-down --bind=ctrl-k:preview-up'
+alias rmi='rm -rf node_modules && npmi'
+alias rmis='rm -rf node_modules && npmi && npms'
+alias ggitc="git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -nr"
 alias npms='npm start'
+alias npmi='npm i'
 alias vint='j int && nvim'
 alias nvimrc='nvim ~/.config/nvim'
 alias cself='j self-serve && code .'
@@ -49,8 +53,8 @@ alias cint='j int && code .'
 alias cxapi='j xapi && code .'
 alias cni='j ni && code .'
 alias oa='open -a /Applications/Android\ Studio.app'
-alias vi='nvim'
-alias vim='nvim'
+alias vi='lvim'
+alias vim='lvim'
 alias f='flutter'
 alias fr='f run'
 alias fc='f create'
@@ -88,6 +92,8 @@ alias lae='emulator -avd p3a'
 alias le='emulator -list-avds'
 alias fdf='firebase deploy --only functions'
 alias fse='firebase emulators:start'
+alias rysd='stack exec -- yesod devel'
+
 # THS
 # alias saths="docker exec -it `docker ps | grep stack_web | head -1 | cut -d' ' -f1` yarn build-angular && cd .."
 ZSH_DISABLE_COMPFIX=true
@@ -96,43 +102,16 @@ source $ZSH/oh-my-zsh.sh
 
 
 prompt_dir() {
-  prompt_segment blue black '%2~'
+  prompt_segment blue black '%c'
 }
 
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-  fi
-}
-function cd {
-  builtin cd "$@" && ls
-}
+# prompt_context() {
+#   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+#   fi
+# }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
-
-caloginattempt() {
-  echo "Attempting connection to AWS CodeArtifact NPM registry..."
-  aws codeartifact login --tool npm --repository npm-store --domain awie-codeartifact-shared-01 --namespace @esure-cloud --profile ecloud-shared-dev-users-571738151596
-  # aws codeartifact login --tool npm --repository npm-store-bb --domain awie-codeartifact-shared-01 --domain-owner 571738151596
-}
-
-calogin() {
-  caloginattempt
-  if [[ $? != 0 ]]; then
-    echo "Connection failed on first attempt..."
-    echo "Attempting token refresh from aws..."
-    aws sso login --profile ecloud-shared-dev-users-571738151596
-    caloginattempt
-    if [[ $? != 0 ]]; then
-      echo "Connection failed on second attempt..."
-      echo "Unable to auto-resolve issue, please review any previous error details to be resolved manually."
-    else
-      echo "Connection success on second attempt."
-    fi
-  else
-    echo "Connection success on first attempt."
-  fi
-}
 
 # use fzf to display branches with git log preview
 fzf-git-branch() {
@@ -142,17 +121,6 @@ fzf-git-branch() {
         grep -v HEAD | grep -v '/remotes\s' |
         fzf --height 100% --ansi --no-multi 
 }
-
-
-# fzf-git-branch() {
-#     git rev-parse HEAD > /dev/null 2>&1 || return
-
-#     git branch --color=always --format='%(refname:short) (%(authorname))' |
-#         grep -v HEAD | grep -v '/remotes\s' |
-#         fzf --height 50% --ansi --no-multi --preview-window right:65% \
-#             --preview 'git log -n 50 --color=always --date=short --pretty="format:%C(auto)%cd %h%d %s" $(sed "s/.* //" <<< {})' |
-#         sed "s/.* //" | sed 's#^remotes/[^/]*/##'
-# }
 
 # use fzf to filter branches when checking out
 gbf() {
@@ -177,4 +145,5 @@ if [ -r ~/.zshrc ]; then echo 'export GPG_TTY=$(tty)' >> ~/.zshrc; \
 #### END FIG ENV VARIABLES ####
 #[ -f "/Users/kp/.ghcup/env" ] && source "/Users/kp/.ghcup/env" # ghcup-env
 [ -f "/Users/kp/.ghcup/env" ] && source "/Users/kp/.ghcup/env" # ghcup-env
-
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export GPG_TTY=$(tty)
